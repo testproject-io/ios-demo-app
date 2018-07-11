@@ -8,19 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		CC13951E1F2BDC6900F0BDF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13951D1F2BDC6900F0BDF1 /* AppDelegate.swift */; };
-		CC1395201F2BDC6900F0BDF1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13951F1F2BDC6900F0BDF1 /* ViewController.swift */; };
+		CC1395201F2BDC6900F0BDF1 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC13951F1F2BDC6900F0BDF1 /* LoginViewController.swift */; };
 		CC1395231F2BDC6900F0BDF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CC1395211F2BDC6900F0BDF1 /* Main.storyboard */; };
 		CC1395251F2BDC6900F0BDF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CC1395241F2BDC6900F0BDF1 /* Assets.xcassets */; };
+		CC2C32C120F3E3DE006C5921 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC2C32C020F3E3DE006C5921 /* ProfileViewController.swift */; };
 		CCC5DB561F34A68C001837B0 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC5DB551F34A68C001837B0 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		CC13951A1F2BDC6900F0BDF1 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC13951D1F2BDC6900F0BDF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = Demo/AppDelegate.swift; sourceTree = "<group>"; };
-		CC13951F1F2BDC6900F0BDF1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Demo/ViewController.swift; sourceTree = "<group>"; };
+		CC13951F1F2BDC6900F0BDF1 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = Demo/LoginViewController.swift; sourceTree = "<group>"; };
 		CC1395221F2BDC6900F0BDF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CC1395241F2BDC6900F0BDF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Demo/Assets.xcassets; sourceTree = "<group>"; };
 		CC1395291F2BDC6900F0BDF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = Demo/Info.plist; sourceTree = "<group>"; };
+		CC2C32C020F3E3DE006C5921 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		CCC5DB551F34A68C001837B0 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = "Launch Screen.storyboard"; path = "Demo/Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				CC13951D1F2BDC6900F0BDF1 /* AppDelegate.swift */,
-				CC13951F1F2BDC6900F0BDF1 /* ViewController.swift */,
+				CC13951F1F2BDC6900F0BDF1 /* LoginViewController.swift */,
+				CC2C32C020F3E3DE006C5921 /* ProfileViewController.swift */,
 				CC1395211F2BDC6900F0BDF1 /* Main.storyboard */,
 				CCC5DB551F34A68C001837B0 /* Launch Screen.storyboard */,
 				CC1395241F2BDC6900F0BDF1 /* Assets.xcassets */,
@@ -91,11 +94,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = TestProject;
 				TargetAttributes = {
 					CC1395191F2BDC6900F0BDF1 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = W7JYMAJ6R3;
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
@@ -137,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CC1395201F2BDC6900F0BDF1 /* ViewController.swift in Sources */,
+				CC2C32C120F3E3DE006C5921 /* ProfileViewController.swift in Sources */,
+				CC1395201F2BDC6900F0BDF1 /* LoginViewController.swift in Sources */,
 				CC13951E1F2BDC6900F0BDF1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -171,6 +176,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -178,6 +184,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -228,6 +235,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -235,6 +243,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -269,10 +278,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W7JYMAJ6R3;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.testproject.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -286,10 +295,10 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = W7JYMAJ6R3;
 				ENABLE_BITCODE = YES;
 				INFOPLIST_FILE = Demo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.testproject.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
