@@ -31,6 +31,8 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
         self.address.delegate = self
         self.email.delegate = self
         self.phone.delegate = self
+        
+        self.view.addGestureRecognizer(UITapGestureRecognizer(target: self.view, action: #selector(UIView.endEditing(_:))))
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -44,12 +46,6 @@ class ProfileViewController: UIViewController, UITextFieldDelegate {
     @IBAction func performLogout(_ sender: Any) {
         performSegue(withIdentifier: "unwindSegueToLogin", sender: self)
     }
-    
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        self.view.endEditing(true)
-        return false
-    }
-    
     
     @IBAction func performSave(_ sender: Any) {
         
