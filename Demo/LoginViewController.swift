@@ -17,10 +17,18 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var validationFullName: UILabel!
     @IBOutlet weak var validationPassword: UILabel!
     
+    @IBOutlet weak var arguments: UILabel!
+    
     @IBAction func unwindToVC1(segue:UIStoryboardSegue) { }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if (CommandLine.arguments.count > 1) {
+            var args = CommandLine.arguments;
+            args.remove(at: 0);
+            arguments.text = "Arguments: " + args.joined(separator: ",");
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
